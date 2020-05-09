@@ -1,0 +1,101 @@
+body {
+	background-color: #FDFFC3;
+}
+div#collapsable-nav.collapse.navbar-collapse {
+	padding: 0px;
+}
+/** HEADER **/
+#header-nav {
+	background-color: #BCBCBC;
+	border-radius: 0px;
+	border: 0px;
+	border-bottom: 1px solid black;
+}
+.navbar-brand {
+	padding-top: 20px;
+}
+.navbar-brand h1{ /** Styling the actual header BRAND**/
+	color: #000000;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+	text-shadow: .5px .5px .5px #222;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+}
+.navbar-brand a:hover, .navbar-brand a:focus { /**Reset the user styles defaults**/
+	text-decoration: none;
+}
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a { /**List Items styling**/
+	color: #000000;
+	text-align: center;
+	font-size: 1em;
+	background-color: #919191;
+}
+#nav-list a:hover { /**on hover styling of list items**/
+	background: #E8E8E8;
+}
+.navbar-header button.navbar-toggle, navbar-header .icon-bar {
+	border: 1.2px solid #000000;
+}
+.navbar-header button.navbar-toggle {
+	margin-top: 15px;
+}
+/** MAIN CONTENT USING 12-GRID **/
+div.row { /** Almost made a mistake here, couldnt figure out why positioning was off. Your row can nenver have margins in grid system**/
+	margin:0px;
+	margin-top: 10px;
+	padding: 0px;
+}
+div#OurMenu h2{
+	font-size: 2.5vw;
+	font-weight: bolder;
+	color: black;
+}
+div.content-container {
+	padding: 10px;
+	background-color: gray;
+}
+div#outer-box {
+	padding:10px;
+}
+div.col-content {
+	color: black;
+}
+h3#chicken, h3#beef, h3#sushi {
+	color: black;
+	font-weight: bold;
+	padding-bottom: 5px;
+	font-size: 2vw;
+}
+/** Padding experiment**/
+/*div#ForPadding div.col-content {
+	padding: 20px;
+	color: black;
+}
+div#ForPadding {
+	padding:25px;
+	background-color: gray;
+}*/
+
+
+/*** EXTRA SMALL DEVICES ***/
+@media (max-width:767px) {
+	.navbar-brand {
+		padding-top: 10px;
+	}
+	.navbar-brand h1 {
+		padding-top: 10px;
+		/*font-size: 5vw;*/
+	}
+	.navbar-brand h1{ /** Styling the actual header BRAND**/
+	font-size: 1.3em;
+	text-shadow: .3px .3px .3px #222;
+}
